@@ -25,22 +25,25 @@ This sprint challenge is divided up into three parts: Hash tables (24 points), b
 During your challenge, you will be pulled aside by a PM for a 5 minute interview. During this interview, you will be expected to answer the following three questions:
 
 -   1. What is a blockchain and how does it work?
-       `A blockchain is a decentralized trustness verifications - which means that it is ledger/transactions records are shared across a network of computers. There are three principal technologies that combine to create a blockchain. 1) private key cryptography (SHA256), 2) a distributed network with a shared ledger and 3) an incentive to service the network’s transactions, record-keeping and security.`
+       A blockchain is a decentralized trustness verifications - which means that it is ledger/transactions records are shared across a network of computers.
+
+        There are three principal technologies that combine to create a blockchain:
+
+        1. private key cryptography (SHA256)
+        2. a distributed network with a shared ledger and
+        3. an incentive to service the network’s transactions, record-keeping and security.
+
 -   2. What is an array and how does it work?
 
-```Arrays are among the oldest and most important data structures, and are used by almost every program. They are also used to implement many other data structures, such as lists.,
+        `Arrays are among the oldest and most important data structures, and are used by almost every program. They are also used to implement many other data structures, such as lists. Array is a homogeneous collection of elements of same data types where the data types can be int, char, float etc…. The elements of an array are numbered. We call that number the index of the array element. They are storred as a block of memory.`
 
-Array is a homogeneous collection of elements of same data types where the data types can be int, char, float etc…. The elements of an array are numbered. We call that number the index of the array element. They are storred as a block of memory.
+-   3.  What is a hash table and how does it work?
 
-```
+        `A hash table is a data structure that is used to store keys/value pairs. It uses a hash function to compute an index into an array in which an element will be inserted or searched.
 
--   3. What is a hash table and how does it work?
+        One problem—what if two keys hash to the same index in our array? This is called a hash collision. There are a few different strategies for dealing with them.
 
-```A hash table is a data structure that is used to store keys/value pairs. It uses a hash function to compute an index into an array in which an element will be inserted or searched.
-One problem—what if two keys hash to the same index in our array? This is called a hash collision. There are a few different strategies for dealing with them.
-
-Here's a common one: instead of storing the actual values in our array, let's have each array slot hold a pointer to a linked list holding the counts for all the words that hash to that index
-```
+        Here's a common one: instead of storing the actual values in our array, let's have each array slot hold a pointer to a linked list holding the counts for all the words that hash to that index.`
 
 You will receive points at the PM's discretion based on the following criteria:
 
