@@ -24,7 +24,7 @@ def proof_of_work(last_proof):
     print("Searching for next proof")
     proof = 0
     while valid_proof(last_proof, proof):
-        proof += 111
+        proof += 1
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
@@ -56,13 +56,13 @@ if __name__ == '__main__':
     coins_mined = 0
 
     # Load or create ID
-    f = open("blockchain/miner.py", "r")
+    f = open("blockchain/my_id.txt", "r")
     id = f.read()
     print("ID is", id)
     f.close()
     if len(id) == 0:
         f = open(
-            "blockchain/miner.py", "w")
+            "blockchain/my_id.txt", "w")
         # Generate a globally unique ID
         id = str(uuid4()).replace('-', '')
         print("Created new ID: " + id)
